@@ -26,8 +26,7 @@ function todaysClasses() {
             html = "<strong>" + "The gym is closed on Sundays." + "</strong>";
             break;
         case 1: //Monday
-            html =  "4:00-4:30pm | Cardio" + "<br />" +
-                    "4:30-5:00pm | Kettlebell" + "<br />" +
+            html =  "4:00-5:00pm | Kettlebox" + "<br />" +
                     "5:00-5:30pm | Core Training" + "<br />" +
                     "5:30-6:30pm | BoxerCise" + "<br />" +
                     "6:30-7:00pm | Strength Training" + "<br />" +
@@ -35,8 +34,8 @@ function todaysClasses() {
             break;
         case 2: //Tuesday
             html =  "4:00-4:30pm | Cardio" + "<br />" +
-                    "4:30-5:00pm | Strength Training" + "<br />" +
-                    "5:00-5:30pm | Kettlebell" + "<br />" +
+                    "4:30-5:30pm | Kettlepower" + "<br />" +
+                    "5:30-6:00pm | Technique" + "<br />" +
                     "5:30-6:30pm | BoxerCise" + "<br />" +
                     "6:30-7:00pm | Core Training" + "<br />" +
                     "7:00-8:30pm | BoxStrong";
@@ -45,15 +44,15 @@ function todaysClasses() {
             html =  "4:00-4:30pm | Heavy Bag Conditioning" + "<br />" +
                     "4:30-5:00pm | Cardio" + "<br />" +
                     "5:00-5:30pm | Strength Training" + "<br />" +
-                    "5:30-6:00pm | Core Training" + "<br />" +
-                    "5:30-6:30pm | Live Stronger" + "<br />" +
-                    "6:00-6:30pm | Kettlebell" + "<br />" +
+                    "5:30-6:30pm | Kettlecore" + "<br />" +       
+                    "6:00-6:30pm | Technique" + "<br />" +             
                     "6:30-8:00pm | BoxStrong";
             break;
         case 4: //Thursday
             html =  "4:00-4:30pm | Strength Training" + "<br />" +
                     "4:30-5:00pm | Kettlebell" + "<br />" +
                     "5:00-6:00pm | BoxerCise" + "<br />" +
+                    "6:00-6:30pm | Technique" + "<br />" +
                     "6:00-6:30pm | Core Training" + "<br />" +
                     "6:30-8:00pm | BoxStrong";
             break;
@@ -87,8 +86,6 @@ function todaysClasses() {
             //} //Uncomment this bracket if Sparring class returns..
     }
     if (month == 11 && date == 25) {
-        html = "There are no classes today. <br />Merry Christmas!";
-    } else if (month == 11 && date == 26) {
         html = "There are no classes today. <br />Merry Christmas!";
     } else if (month == 0 && date == 1) {
         html = "There are no classes today. <br />Happy New Year!";
@@ -157,12 +154,23 @@ function populateClasses(){
     }, {
         "name": "Live Stronger: Begins July 6 (free for the summer)",
         "description": "This class is for those of you who have fought hard to reclaim your lives after battling cancer. It's a place for you to reclaim your health, your energy, your happiness, and to make friends who are also looking for the support of a strong class that is geared towards helping you reclaim your life." 
+    }, {
+        "name": "Kettlebox",
+        "description": "New!" 
+    }, {
+        "name": "Kettlepower",
+        "description": "New!" 
+    }, {
+        "name": "Kettlecore",
+        "description": "New!" 
+    }, {
+        "name": "Technique",
+        "description": "New!" 
     }
     ];
 
     document.getElementById("Monday").innerHTML =
-        "4:00-4:30pm" + " | " + classes[0].name + ": " + classes[0].description + "<hr>" +
-        "4:30-5:00pm" + " | " + classes[1].name + ": " + classes[1].description + "<hr>" +
+        "4:00-5:00pm" + " | " + classes[9].name + ": " + classes[9].description + "<hr>" +
         "5:00-5:30pm" + " | " + classes[2].name + ": " + classes[2].description + "<hr>" +
         "5:30-6:30pm" + " | " + classes[3].name + ": " + classes[3].description + "<hr>" +
         "6:30-7:00pm" + " | " + classes[4].name + ": " + classes[4].description + "<hr>" +
@@ -170,8 +178,8 @@ function populateClasses(){
 
     document.getElementById("Tuesday").innerHTML =
         "4:00-4:30pm" + " | " + classes[0].name + ": " + classes[0].description + "<hr>" +
-        "4:30-5:00pm" + " | " + classes[4].name + ": " + classes[4].description + "<hr>" +
-        "5:00-5:30pm" + " | " + classes[1].name + ": " + classes[1].description + "<hr>" +
+        "4:30-5:30pm" + " | " + classes[10].name + ": " + classes[10].description + "<hr>" +
+        "5:30-6:00pm" + " | " + classes[12].name + ": " + classes[12].description + "<hr>" +
         "5:30-6:30pm" + " | " + classes[3].name + ": " + classes[3].description + "<hr>" +
         "6:30-7:00pm" + " | " + classes[2].name + ": " + classes[2].description + "<hr>" +
         "7:00-8:30pm" + " | " + classes[5].name + ": " + classes[5].description;
@@ -180,15 +188,15 @@ function populateClasses(){
         "4:00-4:30pm" + " | " + classes[6].name + ": " + classes[6].description + "<hr>" +
         "4:30-5:00pm" + " | " + classes[0].name + ": " + classes[0].description + "<hr>" +
         "5:00-5:30pm" + " | " + classes[4].name + ": " + classes[4].description + "<hr>" +
-        "5:30-6:00pm" + " | " + classes[2].name + ": " + classes[2].description + "<hr>" +
-        "5:30-6:30pm" + " | " + classes[8].name + ": " + classes[8].description + "<hr>" +
-        "6:00-6:30pm" + " | " + classes[1].name + ": " + classes[1].description + "<hr>" +
+        "5:30-6:30pm" + " | " + classes[11].name + ": " + classes[11].description + "<hr>" +
+        "6:00-6:30pm" + " | " + classes[12].name + ": " + classes[12].description + "<hr>" +
         "6:30-8:00pm" + " | " + classes[5].name + ": " + classes[5].description;
 
     document.getElementById("Thursday").innerHTML =
         "4:00-4:30pm" + " | " + classes[4].name + ": " + classes[4].description + "<hr>" +
         "4:30-5:00pm" + " | " + classes[1].name + ": " + classes[1].description + "<hr>" +
         "5:00-6:00pm" + " | " + classes[3].name + ": " + classes[3].description + "<hr>" +
+        "6:00-6:30pm" + " | " + classes[12].name + ": " + classes[12].description + "<hr>" +
         "6:00-6:30pm" + " | " + classes[2].name + ": " + classes[2].description + "<hr>" +
         "6:30-8:00pm" + " | " + classes[5].name + ": " + classes[5].description;
 
