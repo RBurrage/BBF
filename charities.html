@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Boston Boxing &amp; Fitness</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        		
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    
+	<div id="header"></div><!--This is an include-->
+
+        <div class="container">
+            <div class="row">                
+                <div class="span12">
+                    <div class="padding">
+                        <h5>Support for Local Charities</h5>
+                        <p>Boston Boxing is reaching out to local businesses as a means of raising money for our charities through advertising and sponsorship opportunities during our Fight Nights. We offer the following options for sponsorship:</p>
+                        
+                        <ul>
+                            <li><strong>Sponsorship Plan 1 – Fight Night Programs:</strong>  Program advertisements cost $75 for a coupon to $300 for a full page ad, with $125 quarter page and $200 half page options in between. For an additional $25, the ad will be in color. Programs are printed on 11x17” paper and folded in half, so each page is 8.5x11”. Your advertisement will appear in all of our programs from April 2016 through March 2017 and will be seen by the local community on an almost monthly basis. </li>
+
+                        <li><strong>Sponsorship Plan 2 -  Fight Night Sponsorship for $500:</strong> Includes a banner in the gym year round and a table at all Fight Nights, as well as an ad in the boob as one of our feature sponsorships. </li>
+                        </ul>
+
+                        <p>Please consider sponsoring to not only support a great cause but to receive some great publicity in the local community. For more information, email info@bostonboxing.com. If you have not yet been to the gym and would like to stop for a complimentary class to see what we are all about, please join us any Monday at 6pm.</p>
+                        <p>For more information on our gym please check us out at www.bostonboxing.com or contact us at <a href="mailto:info@bostonboxing.com">info@bostonboxing.com</a></p>
+                        <p>Thank you</p>
+                        <p>Edward LaVache, Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span6">
+                	<div class="padding">
+                    <h4>Fit Students for Life</h4>
+                    <div class="charity-logo">
+                        <img src="assets/img/fit-students-for-life.png"/>
+                        </div>
+                        <p>Fit Student for Life is a free program for middle school and high school students that teaches the importance of fitness and healthy living. Middle school students are introduced to basic body weight strength exercises, core training, general plyometric exercises, and boxing fundamentals and technique.</p>
+                        <p>High school students are given a safe introduction to weight lifting that ensures proper form and technique.  We also provide speed and explosion training for high school athletes, with an introduction to boxing technique and fundamentals.
+                            Boston boxing is currently in its tenth year of providing this program to the community.</p>
+                    </div><!--end padding-->
+				</div>
+
+                <div class="span6">	
+                	<div class="padding">
+                    <h4>Rocksteady Boxing</h4>
+                    <div class="charity-logo">
+                        <img src="assets/img/rock-steady.png">
+                    </div>
+                        <p>Boston Boxing has joined forces with former member and current Rocksteady trainer Todd Paris to provide Parkinson’s patients an effective form of exercise through non-contact boxing programs.</p>
+                        <p>Classes are held Tuesday and Thursday mornings at Boston Boxing. They are split into different levels to accommodate varying degrees of Parkinson’s/fitness and are geared towards improving quality of life and restoring a sense of efficacy and self worth. <a href="mailto:info@bostonboxing.com">Contact us</a> for more information or visit <a href="http://www.luckypunchboxing.com" target="_blank">www.luckypunchboxing.com</a>.</p>
+                    </div><!--end padding-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="span6">
+                	<div class="padding">
+                    <h4>Watertown Overcoming Addiction</h4>
+                    <div class="charity-logo">
+                        <img src="assets/img/woa.png" style="width:95%">
+                    </div>
+                        <p>Boston Boxing will be opening its doors to this community action group based out of Watertown, MA. We will provide free memberships and workout programs to men and women suffering from addiction to drugs and alcohol. We are currently in the early stages of working with the city of Boston and the Mayor’s office to provide the same outlet for those battling addiction in the Allston/Brighton area.</p>
+                    </div><!--end padding-->
+				</div>
+
+                <div class="span6">	
+                	<div class="padding">
+                    <h4>Live Stronger</h4>
+                    <div class="charity-logo">
+                        <img src="assets/img/live-stronger.png">
+                    </div>
+                        <p>The Live Stronger class is a class for men and women battling their way back to health after cancer. Those who have fought hard to reclaim their life now have a place where they can reclaim their health, energy, and happiness, and make friends who are looking for the support of a strong class to help them reclaim their life.</p> 
+
+                        <p>The class will be offered on Wednesday evenings from 5:30-6:30 at Boston Boxing and Fitness starting July 6th.  Classes will be free for the summer.
+</p>
+                    </div><!--end padding-->
+                </div>
+            </div>
+        </div>
+
+		<div id="footer"></div><!--This is an include-->
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.8.2.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+		<!--JS and CSS for Supersized Slide Show-->		
+		
+		
+		<script type="text/javascript" src="assets/supersized/js/supersized.3.2.7.min.js"></script>
+        
+		<script type="text/javascript" src="assets/js/scripts.js"></script>  
+		<script type="text/javascript">
+            $("#header").load("includes.html #header");
+            $("#footer").load("includes.html #footer",function(){
+				todaysClasses();
+				todaysDate();
+			});
+        </script> 
+        
+		<script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-51838241-1', 'auto');
+          ga('send', 'pageview');
+        
+        </script>        
+		   	
+    </body>
+
+</html>
