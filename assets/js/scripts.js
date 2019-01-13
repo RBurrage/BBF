@@ -156,13 +156,13 @@ function populateClasses(){
         "description": "This class is for those of you who have fought hard to reclaim your lives after battling cancer. It's a place for you to reclaim your health, your energy, your happiness, and to make friends who are also looking for the support of a strong class that is geared towards helping you reclaim your life." 
     }, {
         "name": "Kettlebox",
-        "description": "New!" 
+        "description": "Combines a cardiovascular kettlebell workout with intense heavy bag drills for a total body workout" 
     }, {
         "name": "Kettlepower",
-        "description": "New!" 
+        "description": "Combines the power workout of a kettlebell class with a dumbbell and TRX strength training session" 
     }, {
         "name": "Kettlecore",
-        "description": "New!" 
+        "description": "Combines the speed and explosion exercises of a kettlebell class with stability and core strengthening exercises" 
     }, {
         "name": "Technique",
         "description": "New!" 
