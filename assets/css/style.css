@@ -745,3 +745,11 @@ button.close {
     color: #f90;
     font-weight: bold;
 }
+
+form#school {
+	margin: 20px !important;
+}
+
+#school select {
+	width: 250px;
+}
