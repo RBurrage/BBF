@@ -79,8 +79,7 @@ function todaysClasses() {
                 }else {*/
             
             html =  "10:30-12:00pm | BoxStrong" + "<br />" +
-                    "12:30-1:30pm | BoxerCise" + "<br />" +
-                    "1:30-2:00pm | Core Training";
+                    "12:30-1:30pm | BoxerCise";
             break;   
             
             //} //Uncomment this bracket if Sparring class returns..
@@ -207,9 +206,7 @@ function populateClasses(){
 	
     document.getElementById("Saturday").innerHTML =
         "10:30-12:00pm" + " | " + classes[5].name + ": " + classes[5].description + "<hr>" +
-        "12:30-1:30pm" + " | " + classes[3].name + ": " + classes[3].description + "<hr>" +
-        /*"12:30-2:30pm" + " | " + classes[7].name + ": " + classes[7].description + "<hr>" + */ //summer sparring class
-        "1:30-2:00pm" + " | " + classes[2].name + ": " + classes[2].description;  
+        "12:30-1:30pm" + " | " + classes[3].name + ": " + classes[3].description;  
 }//This gets called in class-schedule.html
 
 

@@ -26,8 +26,7 @@ function todaysClasses() {
             html = "<strong>" + "The gym is closed on Sundays." + "</strong>";
             break;
         case 1: //Monday
-            html =  "4:00-4:30pm | Cardio" + "<br />" +
-                    "4:30-5:00pm | Kettlebell" + "<br />" +
+            html =  "4:00-5:00pm | Kettlebox" + "<br />" +
                     "5:00-5:30pm | Core Training" + "<br />" +
                     "5:30-6:30pm | BoxerCise" + "<br />" +
                     "6:30-7:00pm | Strength Training" + "<br />" +
@@ -35,8 +34,8 @@ function todaysClasses() {
             break;
         case 2: //Tuesday
             html =  "4:00-4:30pm | Cardio" + "<br />" +
-                    "4:30-5:00pm | Strength Training" + "<br />" +
-                    "5:00-5:30pm | Kettlebell" + "<br />" +
+                    "4:30-5:30pm | Kettlepower" + "<br />" +
+                    "5:30-6:00pm | Technique" + "<br />" +
                     "5:30-6:30pm | BoxerCise" + "<br />" +
                     "6:30-7:00pm | Core Training" + "<br />" +
                     "7:00-8:30pm | BoxStrong";
@@ -45,15 +44,15 @@ function todaysClasses() {
             html =  "4:00-4:30pm | Heavy Bag Conditioning" + "<br />" +
                     "4:30-5:00pm | Cardio" + "<br />" +
                     "5:00-5:30pm | Strength Training" + "<br />" +
-                    "5:30-6:00pm | Core Training" + "<br />" +
-                    "5:30-6:30pm | Live Stronger" + "<br />" +
-                    "6:00-6:30pm | Kettlebell" + "<br />" +
+                    "5:30-6:30pm | Kettlecore" + "<br />" +       
+                    "6:00-6:30pm | Technique" + "<br />" +             
                     "6:30-8:00pm | BoxStrong";
             break;
         case 4: //Thursday
             html =  "4:00-4:30pm | Strength Training" + "<br />" +
                     "4:30-5:00pm | Kettlebell" + "<br />" +
                     "5:00-6:00pm | BoxerCise" + "<br />" +
+                    "6:00-6:30pm | Technique" + "<br />" +
                     "6:00-6:30pm | Core Training" + "<br />" +
                     "6:30-8:00pm | BoxStrong";
             break;
@@ -65,40 +64,34 @@ function todaysClasses() {
         case 6: //Saturday
             
             //Uncomment this code when the summer sparring class returns.
-            if (
+            /*if (
             month == 5 && date == 11 || 
             month == 5 && date == 25 || 
             month == 6 && date == 9 || 
             month == 6 && date == 23 || 
-            month == 7 && date == 13 || 
+            month == 7 && date == 13  || 
             month == 7 && date == 27) {
                 html =  "10:30-12:00pm | BoxStrong" + "<br />" +
                         "12:30-1:30pm | BoxerCise" + "<br />" +
                         "12:30-2:30pm | Sparring Class" + "<br />" +
                         "1:30-2:00pm | Core Training";
                 break;
-                }else{
+                }else {*/
             
             html =  "10:30-12:00pm | BoxStrong" + "<br />" +
                     "12:30-1:30pm | BoxerCise" + "<br />" +
                     "1:30-2:00pm | Core Training";
             break;   
             
-            } //Don't forget to comment out this closing bracket when the summer sparring class ends.
+            //} //Uncomment this bracket if Sparring class returns..
     }
     if (month == 11 && date == 25) {
-        html = "There are no classes today. <br />Merry Christmas!";
-    } else if (month == 11 && date == 26) {
         html = "There are no classes today. <br />Merry Christmas!";
     } else if (month == 0 && date == 1) {
         html = "There are no classes today. <br />Happy New Year!";
     } else if (month == 6 && date == 4) {
-        html = "10:30 am BoxStrong only today. <br />The gym will be closing at noon. <br />Happy 4th of July!";
-    } else if (month == 6 && date == 3) {
-        html = "The gym will be closing at 7pm tonight.<br />We are open tomorrow for 10:30 am BoxStrong, closing at noon. <br />Happy 4th of July!";
-    } else if (month == 8 && date == 5) {
-        html = "The gym is closed today. <br />Happy Labor Day!";
-		}
+		html = "The gym is closed today. Happy July 4th!";
+	}
     document.getElementById("byday").innerHTML = html;
 }//This function gets called in index.html
 //-----------------------------------------------------------------------------------------------------------------------
@@ -156,17 +149,28 @@ function populateClasses(){
         "name": "Heavy Bag Conditioning",
         "description": "Focuses on speed and power drills on the heavy bags."
     }, {
-        "name": "Sparring Class - Summer Saturdays: June 11 & 25, July 9 & 23, August 13 & 27 ",
+        "name": "Sparring Class",
         "description": "This class is focused on drills and technique and includes light to moderate sparring. Learn defense and counter punching basics as they pertain to sparring. Whether or not you have prior experience in the ring, you will need to pass an assessment before you are permitted to spar. Non-members interested please pay online before arriving in class. Class fee is $15.00." 
     }, {
         "name": "Live Stronger: Begins July 6 (free for the summer)",
         "description": "This class is for those of you who have fought hard to reclaim your lives after battling cancer. It's a place for you to reclaim your health, your energy, your happiness, and to make friends who are also looking for the support of a strong class that is geared towards helping you reclaim your life." 
+    }, {
+        "name": "Kettlebox",
+        "description": "New!" 
+    }, {
+        "name": "Kettlepower",
+        "description": "New!" 
+    }, {
+        "name": "Kettlecore",
+        "description": "New!" 
+    }, {
+        "name": "Technique",
+        "description": "New!" 
     }
     ];
 
     document.getElementById("Monday").innerHTML =
-        "4:00-4:30pm" + " | " + classes[0].name + ": " + classes[0].description + "<hr>" +
-        "4:30-5:00pm" + " | " + classes[1].name + ": " + classes[1].description + "<hr>" +
+        "4:00-5:00pm" + " | " + classes[9].name + ": " + classes[9].description + "<hr>" +
         "5:00-5:30pm" + " | " + classes[2].name + ": " + classes[2].description + "<hr>" +
         "5:30-6:30pm" + " | " + classes[3].name + ": " + classes[3].description + "<hr>" +
         "6:30-7:00pm" + " | " + classes[4].name + ": " + classes[4].description + "<hr>" +
@@ -174,8 +178,8 @@ function populateClasses(){
 
     document.getElementById("Tuesday").innerHTML =
         "4:00-4:30pm" + " | " + classes[0].name + ": " + classes[0].description + "<hr>" +
-        "4:30-5:00pm" + " | " + classes[4].name + ": " + classes[4].description + "<hr>" +
-        "5:00-5:30pm" + " | " + classes[1].name + ": " + classes[1].description + "<hr>" +
+        "4:30-5:30pm" + " | " + classes[10].name + ": " + classes[10].description + "<hr>" +
+        "5:30-6:00pm" + " | " + classes[12].name + ": " + classes[12].description + "<hr>" +
         "5:30-6:30pm" + " | " + classes[3].name + ": " + classes[3].description + "<hr>" +
         "6:30-7:00pm" + " | " + classes[2].name + ": " + classes[2].description + "<hr>" +
         "7:00-8:30pm" + " | " + classes[5].name + ": " + classes[5].description;
@@ -184,15 +188,15 @@ function populateClasses(){
         "4:00-4:30pm" + " | " + classes[6].name + ": " + classes[6].description + "<hr>" +
         "4:30-5:00pm" + " | " + classes[0].name + ": " + classes[0].description + "<hr>" +
         "5:00-5:30pm" + " | " + classes[4].name + ": " + classes[4].description + "<hr>" +
-        "5:30-6:00pm" + " | " + classes[2].name + ": " + classes[2].description + "<hr>" +
-        "5:30-6:30pm" + " | " + classes[8].name + ": " + classes[8].description + "<hr>" +
-        "6:00-6:30pm" + " | " + classes[1].name + ": " + classes[1].description + "<hr>" +
+        "5:30-6:30pm" + " | " + classes[11].name + ": " + classes[11].description + "<hr>" +
+        "6:00-6:30pm" + " | " + classes[12].name + ": " + classes[12].description + "<hr>" +
         "6:30-8:00pm" + " | " + classes[5].name + ": " + classes[5].description;
 
     document.getElementById("Thursday").innerHTML =
         "4:00-4:30pm" + " | " + classes[4].name + ": " + classes[4].description + "<hr>" +
         "4:30-5:00pm" + " | " + classes[1].name + ": " + classes[1].description + "<hr>" +
         "5:00-6:00pm" + " | " + classes[3].name + ": " + classes[3].description + "<hr>" +
+        "6:00-6:30pm" + " | " + classes[12].name + ": " + classes[12].description + "<hr>" +
         "6:00-6:30pm" + " | " + classes[2].name + ": " + classes[2].description + "<hr>" +
         "6:30-8:00pm" + " | " + classes[5].name + ": " + classes[5].description;
 
@@ -204,9 +208,15 @@ function populateClasses(){
     document.getElementById("Saturday").innerHTML =
         "10:30-12:00pm" + " | " + classes[5].name + ": " + classes[5].description + "<hr>" +
         "12:30-1:30pm" + " | " + classes[3].name + ": " + classes[3].description + "<hr>" +
-        "12:30-2:30pm" + " | " + classes[7].name + ": " + classes[7].description + "<hr>" + //summer sparring class
+        /*"12:30-2:30pm" + " | " + classes[7].name + ": " + classes[7].description + "<hr>" + */ //summer sparring class
         "1:30-2:00pm" + " | " + classes[2].name + ": " + classes[2].description;  
 }//This gets called in class-schedule.html
+
+
+$(function() {
+    $("#myModal").modal();
+});
+
 
 
 /*function getTimeRemaining(endtime) {
