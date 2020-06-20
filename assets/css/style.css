@@ -474,6 +474,11 @@ p {
 .charity-logo-wrapper img {
   width: 95%;
 }
+@media (max-width: 1200px) {
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+}
 @media (min-width: 980px) and (max-width: 1200px) {
   .flex-caption {
     max-width: 700px;
