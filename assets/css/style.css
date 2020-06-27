@@ -33,7 +33,7 @@ body {
 }
 #bbf-movie {
   width: 100%;
-  border: 2px solid #3d7iframe7b2;
+  border: 2px solid #3d7;
 }
 #fb-feed iframe {
   width: 70%;
@@ -53,9 +53,6 @@ a {
 a:hover {
   color: #fff;
   text-decoration: none;
-}
-li {
-  margin-bottom: 10px;
 }
 .button {
   background: radial-gradient(ellipse at center center, #c71717 0%, #000 100%)
@@ -191,7 +188,7 @@ footer .widget p {
 .alert {
   color: #fff;
   font-size: 14px;
-  background: #275428;
+  background: #3d77b2;
   text-shadow: none;
   border: none;
   padding: 20px;
@@ -201,9 +198,8 @@ footer .widget p {
 }
 .boxes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 20px;
-  text-align: center;
 }
 .boxes div {
   background: #333;
